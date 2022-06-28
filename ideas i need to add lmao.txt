@@ -3,3 +3,5 @@
 -Monkeys
 -Gorillas (maybe)
 -Sloths
+-Code Sprit Slime
+-Update Coral Golem's sprite
