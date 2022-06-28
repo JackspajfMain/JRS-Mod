@@ -5,3 +5,4 @@
 -Sloths
 -Code Sprit Slime
 -Update Coral Golem's sprite
+-Better Small Icon
