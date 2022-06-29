@@ -6,3 +6,5 @@
 -Code Sprit Slime
 -Update Coral Golem's sprite
 -Better Small Icon
+-Space Bird
+-Floating space Black Hole (meteor head AI)?
