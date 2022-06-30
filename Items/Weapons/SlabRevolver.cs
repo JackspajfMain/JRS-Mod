@@ -1,4 +1,4 @@
-using JackspajfsRandomStuff.Projectiles;
+//using JackspajfsRandomStuff.Projectiles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;

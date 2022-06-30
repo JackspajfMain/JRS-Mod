@@ -29,7 +29,7 @@ namespace JackspajfsRandomStuff.Items.Weapons
 			Item.width = 30; // Hitbox width of the item.
 			Item.height = 10; // Hitbox height of the item.
 			Item.damage = 20; // The damage of your flail, this is dynamically adjusted in the projectile code.
-			Item.crit = 7; // Critical damage chance %
+			Item.crit = 1; // Critical damage chance %
 			Item.scale = 1.1f;
 			Item.noUseGraphic = true; // This makes sure the item does not get shown when the player swings his hand
 			Item.shoot = ModContent.ProjectileType<SlimyMaceProjectile>(); // The flail projectile
