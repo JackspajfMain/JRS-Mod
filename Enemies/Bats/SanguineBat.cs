@@ -5,6 +5,7 @@ using Terraria.GameContent.Bestiary;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.GameContent;
+using JackspajfsRandomStuff.Items.Banners;
 using Terraria.GameContent.ItemDropRules;
 
 namespace JackspajfsRandomStuff.Enemies.Bats
@@ -31,8 +32,8 @@ namespace JackspajfsRandomStuff.Enemies.Bats
             NPC.knockBackResist = 1f;
             AIType = NPCID.CaveBat;
             AnimationType = NPCID.CaveBat;
-            //Banner = Item.NPCtoBanner(NPCID.Zombie);
-            //BannerItem = Item.BannerToItem(Banner);
+            Banner = NPC.type;
+            BannerItem = ModContent.ItemType<SanguineBatBanner>();
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
