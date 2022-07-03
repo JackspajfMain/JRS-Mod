@@ -8,8 +8,6 @@ using Terraria.GameContent;
 using JackspajfsRandomStuff.Items.Banners;
 using Terraria.GameContent.ItemDropRules;
 
-//Update: no longer archived. Thanks ZoneSkyHeight.
-
 namespace JackspajfsRandomStuff.Enemies.Dungeon
 {
     public class DragonSkull : ModNPC
@@ -44,7 +42,7 @@ namespace JackspajfsRandomStuff.Enemies.Dungeon
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
             //return SpawnCondition.OverworldDaySlime.Chance * 0.2f;
-            if (spawnInfo.Player.ZoneSkyHeight)
+            if (spawnInfo.Player.ZoneDungeon)
                 return JackspajfsRandomStuff.CommonSpawn();
             return 0f;
         }
