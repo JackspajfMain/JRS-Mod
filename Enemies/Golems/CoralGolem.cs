@@ -32,10 +32,8 @@ namespace JackspajfsRandomStuff.Enemies.Golems
 			NPC.knockBackResist = 0.35f;
 			AIType = NPCID.GoblinScout;
 			AnimationType = NPCID.GraniteGolem;
-            NPC.buffImmune[BuffID.Poisoned] = true;
 			NPC.buffImmune[BuffID.OnFire] = true;
 			NPC.buffImmune[BuffID.OnFire3] = true;
-			NPC.buffImmune[BuffID.Confused] = true;
 			//Banner = Item.NPCtoBanner(NPCID.Zombie);
 			//BannerItem = Item.BannerToItem(Banner);
 		}
