@@ -77,34 +77,5 @@ namespace JackspajfsRandomStuff.Enemies.Golems
 		//		NPC.position -= NPC.netOffset;
 		//	}
 		//}
-
-		public override void HitEffect(int hitDirection, double damage)
-		{
-			if (Main.netMode == NetmodeID.Server) return;
-
-            for (int i = 0; i < 15; i++)
-            {
-                int dustIndex = Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Stone, hitDirection, -1f);
-                Dust dust = Main.dust[dustIndex];
-                dust.velocity.X = dust.velocity.X + Main.rand.Next(-50, 51) * 0.01f;
-                dust.velocity.Y = dust.velocity.Y + Main.rand.Next(-50, 51) * 0.01f;
-                dust.scale *= 1f + Main.rand.Next(-30, 31) * 0.01f;
-            }
-            if (NPC.life <= 0)
-			{
-				for (int i = 0; i < 15; i++)
-				{
-					int dustIndex = Dust.NewDust(NPC.position, NPC.width, NPC.height, DustID.Stone, hitDirection, -1f);
-					Dust dust = Main.dust[dustIndex];
-					dust.velocity.X = dust.velocity.X + Main.rand.Next(-50, 51) * 0.01f;
-					dust.velocity.Y = dust.velocity.Y + Main.rand.Next(-50, 51) * 0.01f;
-					dust.scale *= 1f + Main.rand.Next(-30, 31) * 0.01f;
-				}
-				Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("CoralGolemGoreHead").Type);
-				Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("CoralGolemGoreArm").Type);
-				Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("CoralGolemGoreLeg").Type);
-				Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("CoralGolemGoreBody").Type);
-			}
-		}
 	}
 }
