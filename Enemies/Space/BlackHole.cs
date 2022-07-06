@@ -50,7 +50,7 @@ namespace JackspajfsRandomStuff.Enemies.Space
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Sky,
-                new FlavorTextBestiaryInfoElement("???")
+                new FlavorTextBestiaryInfoElement("A 'hole' filled with Void, where not even light can escape.")
             });
         }
 
