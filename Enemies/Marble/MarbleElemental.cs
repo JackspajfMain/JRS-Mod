@@ -9,13 +9,13 @@ using Terraria.GameContent.ItemDropRules;
 
 namespace JackspajfsRandomStuff.Enemies.Marble
 {
-	public class MarbleGolem : ModNPC
+	public class MarbleElemental : ModNPC
 	{
 		public override void SetStaticDefaults()
 		{
-			Main.npcFrameCount[Type] = Main.npcFrameCount[NPCID.GraniteGolem];
+			Main.npcFrameCount[Type] = Main.npcFrameCount[483];
 
-			DisplayName.SetDefault("Marble Golem");
+			DisplayName.SetDefault("Marble Elemental");
 
 			NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
 			{ // Influences how the NPC looks in the Bestiary
@@ -25,19 +25,19 @@ namespace JackspajfsRandomStuff.Enemies.Marble
 		}
 		public override void SetDefaults()
 		{
-			NPC.CloneDefaults(NPCID.GraniteGolem);
+			NPC.CloneDefaults(483);
 			NPC.damage = 30;
 			NPC.defense = 18;
 			NPC.lifeMax = 110;
 			NPC.value = 500f;
-            NPC.aiStyle = 3;
+			NPC.aiStyle = 91;
 			NPC.HitSound = SoundID.NPCHit41;
 			NPC.DeathSound = SoundID.NPCDeath43;
 			NPC.knockBackResist = 0.35f;
-			AIType = NPCID.GraniteGolem;
-			AnimationType = NPCID.GraniteGolem;
-			Banner = NPC.type;
-			BannerItem = ModContent.ItemType<MarbleGolemBanner>();
+			AIType = 483;
+			AnimationType = 483;
+			//Banner = NPC.type;
+			//BannerItem = ModContent.ItemType<MarbleElementalBanner>();
 		}
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
