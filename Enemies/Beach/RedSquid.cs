@@ -54,7 +54,7 @@ namespace JackspajfsRandomStuff.Enemies.Beach
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(ItemDropRule.Common(ItemID.BlackInk, 100));
+        npcLoot.Add(ItemDropRule.Common(ItemID.BlackInk, 1));
         }
     }
 }
