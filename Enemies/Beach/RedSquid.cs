@@ -53,8 +53,8 @@ namespace JackspajfsRandomStuff.Enemies.Beach
             });
         }
 
-        //public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        //npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Items.Materials.Line>(), 1));
-        //}
+        public override void ModifyNPCLoot(NPCLoot npcLoot) {
+        npcLoot.Add(ItemDropRule.Common(ItemID.BlackInk, 100));
+        }
     }
 }
