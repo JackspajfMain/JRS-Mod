@@ -36,8 +36,8 @@ namespace JackspajfsRandomStuff.Enemies.Marble
 			NPC.knockBackResist = 0.35f;
 			AIType = 483;
 			AnimationType = 483;
-			//Banner = NPC.type;
-			//BannerItem = ModContent.ItemType<MarbleElementalBanner>();
+			Banner = NPC.type;
+			BannerItem = ModContent.ItemType<MarbleElementalBanner>();
 		}
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
