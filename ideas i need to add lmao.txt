@@ -1,10 +1,13 @@
--Custom Yoyo?
+MAIN
+-ADD LOOT TO ENEMIES
 -Slab Revolver sprite
--Monkeys
--Gorillas (maybe)
--Sloths
 -Code Sprit Slime
 -Update Coral Golem's sprite
 -Better Small Icon
+
+LESSER
+-Monkeys
+-Gorillas (maybe)
+-Sloths
 -Space Bird
--Floating space Black Hole (meteor head AI)?
+-Ferret Pet
