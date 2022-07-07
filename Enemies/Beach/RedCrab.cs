@@ -32,8 +32,8 @@ namespace JackspajfsRandomStuff.Enemies.Beach
             NPC.alpha = 0;
             AIType = NPCID.Crab;
             AnimationType = NPCID.Crab;
-            //Banner = NPC.type;
-            //BannerItem = ModContent.ItemType<BlackHoleBanner>();
+            Banner = NPC.type;
+            BannerItem = ModContent.ItemType<RedCrabBanner>();
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
