@@ -33,8 +33,8 @@ namespace JackspajfsRandomStuff.Enemies.Jungle.Temple
             NPC.knockBackResist = .3f;
             AIType = NPCID.IceMimic;
             AnimationType = NPCID.IceMimic;
-            //Banner = NPC.type;
-            //BannerItem = ModContent.ItemType<BlackHoleBanner>();
+            Banner = NPC.type;
+            BannerItem = ModContent.ItemType<LihzahrdMimicBanner>();
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
