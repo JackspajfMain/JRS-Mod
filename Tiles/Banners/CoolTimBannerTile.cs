@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using JackspajfsRandomStuff.Items.Banners;
-using JackspajfsRandomStuff.Enemies.Beach;
+using JackspajfsRandomStuff.Enemies.Underground;
 using Terraria;
 //using Terraria.ID;
 using Terraria.ModLoader;
@@ -28,7 +28,7 @@ namespace JackspajfsRandomStuff.Tiles.Banners
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<CoolTim>());
+            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<CoolTimBanner>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer)
