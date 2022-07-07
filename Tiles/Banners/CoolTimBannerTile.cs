@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using JackspajfsRandomStuff.Items.Banners;
-using JackspajfsRandomStuff.Enemies.Jungle.Temple ;
+using JackspajfsRandomStuff.Enemies.Beach;
 using Terraria;
 //using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 
 namespace JackspajfsRandomStuff.Tiles.Banners
 {
-    public class LihzahrdMimicBannerTile : ModTile
+    public class CoolTimBannerTile : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -28,7 +28,7 @@ namespace JackspajfsRandomStuff.Tiles.Banners
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
-            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<LihzahrdMimicBanner>());
+            Item.NewItem(new EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 48, ModContent.ItemType<CoolTim>());
         }
 
         public override void NearbyEffects(int i, int j, bool closer)
@@ -36,7 +36,7 @@ namespace JackspajfsRandomStuff.Tiles.Banners
             if (closer)
             {
                 Main.SceneMetrics.hasBanner = true;
-                Main.SceneMetrics.NPCBannerBuff[ModContent.NPCType<LihzahrdMimic>()] = true;
+                Main.SceneMetrics.NPCBannerBuff[ModContent.NPCType<CoolTim>()] = true;
             }
         }
     }
