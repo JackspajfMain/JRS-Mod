@@ -55,7 +55,7 @@ namespace JackspajfsRandomStuff.Enemies.Underground
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(ItemDropRule.Common(ItemID.RuneHat, 100));
+        npcLoot.Add(ItemDropRule.Common(ItemID.RuneHat, 1));
         }
     }
 }
