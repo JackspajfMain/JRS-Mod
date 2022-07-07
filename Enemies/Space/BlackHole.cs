@@ -29,6 +29,7 @@ namespace JackspajfsRandomStuff.Enemies.Space
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
             NPC.value = 50f;
+            NPC.noGravity = true;
             NPC.aiStyle = 5;
             NPC.alpha = 0;
             NPC.knockBackResist = 1f;
