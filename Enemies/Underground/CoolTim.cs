@@ -51,6 +51,7 @@ namespace JackspajfsRandomStuff.Enemies.Underground
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Caverns,
                 new FlavorTextBestiaryInfoElement("What a cool dude.")
+            });
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot) {
