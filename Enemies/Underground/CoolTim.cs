@@ -42,7 +42,7 @@ namespace JackspajfsRandomStuff.Enemies.Underground
         {
             //return SpawnCondition.OverworldDaySlime.Chance * 0.2f;
             if (spawnInfo.Player.ZoneRockLayerHeight)
-                return JackspajfsRandomStuff.RareSpawn();
+                return JackspajfsRandomStuff.UltraRareSpawn();
             return 0f;
         }
 
