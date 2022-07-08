@@ -4,6 +4,7 @@ MAIN
 -Code Sprit Slime
 -Update Coral Golem's sprite
 -Better Small Icon
+-Gore(s)
 
 LESSER
 -Monkeys
