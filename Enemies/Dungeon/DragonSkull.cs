@@ -43,7 +43,7 @@ namespace JackspajfsRandomStuff.Enemies.Dungeon
         {
             //return SpawnCondition.OverworldDaySlime.Chance * 0.2f;
             if (spawnInfo.Player.ZoneDungeon)
-                return JackspajfsRandomStuff.CommonSpawn();
+                return JackspajfsRandomStuff.UncommonSpawn();
             return 0f;
         }
 
