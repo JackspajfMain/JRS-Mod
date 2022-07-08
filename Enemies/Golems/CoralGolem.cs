@@ -53,8 +53,8 @@ namespace JackspajfsRandomStuff.Enemies.Golems
 		}
 
 		public override void ModifyNPCLoot(NPCLoot npcLoot) {
-			npcLoot.Add(ItemDropRule.Common(169, 10, 1));
-			npcLoot.Add(ItemDropRule.Common(ItemID.Coral, 5, 1));
+			npcLoot.Add(ItemDropRule.Common(169, 1, 10));
+			npcLoot.Add(ItemDropRule.Common(ItemID.Coral, 1, 5));
 			//Stone golem core
 		}
 
