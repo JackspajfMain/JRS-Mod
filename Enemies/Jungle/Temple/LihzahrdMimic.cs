@@ -54,8 +54,8 @@ namespace JackspajfsRandomStuff.Enemies.Jungle.Temple
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot) {
-        npcLoot.Add(ItemDropRule.Common(1293, 1, 1));
-        npcLoot.Add(ItemDropRule.Common(2766, 5, 1));
+        npcLoot.Add(ItemDropRule.Common(1293, 1));
+        npcLoot.Add(ItemDropRule.Common(2766, 1, 5));
         }
     }
 }
